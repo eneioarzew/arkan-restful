@@ -1,0 +1,8 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteRule ^$ Main.php
+RewriteRule ^index.php$ Main.php
+RewriteRule ^([0-9a-z]+)$ Main.php/$1
+RewriteRule ^([0-9a-z]+)/([0-9a-z]+)$ Main.php/$1/$2
+RewriteRule ^([0-9a-z]+)/([0-9a-z]+)/([0-9a-z]+)$ Main.php/$1/$2/$3
